@@ -1,0 +1,283 @@
+
+<!-- Los comentarios a lo largo del codigo son muy importantes nos ayudan  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<icon></icon>
+<title>Harry Potter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons --> 
+
+<div class="w3-bar w3-pale-green w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-aqua"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-aqua"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-aqua"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-aqua"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-aqua"><i class="fa fa-youtube-play"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>HARRY POTTER</b></h1>
+    <h6>Bienvenidos a <span class="w3-tag w3-aqua">Hogwarts</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide w3-center" id="home">
+    <img class="w3-image w3-animate-fading" src="img/hero.jpg" alt="harry image" width="1600" height="1060">
+    <div class="w3-display-middle w3-padding-large">
+      <h1 class="w3-jumbo w3-text-black w3-hide-small "><b>WEB TRIBUTO A</b></h1>
+      <h1 class="w3-text-black" >HARRY POTTER</h1>
+      <h6><button class="w3-button w3-gray w3-padding-large w3-medium w3-hover-text-aqua w3-hover-black w3-round-large" onclick="document.getElementById('subscribe').style.display='block'">LOGIN</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>HARRY POTTER Y LA PIEDRA FILOSOFAL</h3>
+        </div>
+
+        <div class="w3-justify">
+          <img src="/img/HP-1.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong> "Harry Potter y la piedra filosofal" </strong> es una película basada en el primer libro de la serie "Harry Potter" escrita por J.K. Rowling. La película se titula "Harry Potter and the Sorcerer's Stone" en inglés, pero en algunos países de habla hispana se tradujo como "Harry Potter y la piedra filosofal".
+            La película fue lanzada en el año 2001 y fue dirigida por Chris Columbus. En ella, Daniel Radcliffe interpreta a Harry Potter, un joven mago que descubre que es famoso en el mundo mágico y que ha sido aceptado en el Colegio Hogwarts de Magia y Hechicería. La historia sigue a Harry mientras descubre la verdad sobre sus padres y se embarca en una emocionante aventura en busca de la legendaria Piedra Filosofal.    
+            La película fue un gran éxito en taquilla y marcó el inicio de una exitosa franquicia cinematográfica que consta de ocho películas en total, cada una adaptando un libro de la serie "Harry Potter". Esta primera película estableció el tono y la ambientación del mundo mágico creado por J.K. Rowling en la mente de los espectadores de todo el mundo.
+            </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/hermione.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Hermione Granger <span class="w3-opacity w3-medium">May 3, 2006, 6:32 PM</span></h4>
+                <p>No es levioza es leviosaaaaaa </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>HARRY POTTER Y LA CAMARA SECRETA</h3>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/HP-2.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong>"Harry Potter y la cámara secreta"</strong> es la segunda película de la serie de películas basadas en los libros de Harry Potter escritos por J.K. Rowling. La película se titula "Harry Potter and the Chamber of Secrets" en inglés. Fue lanzada en el año 2002 y, al igual que la primera película, fue dirigida por Chris Columbus.
+            En esta película, Daniel Radcliffe retoma su papel como Harry Potter, quien regresa a su segundo año en el Colegio Hogwarts de Magia y Hechicería. La trama gira en torno a la reapertura de la Cámara de los Secretos, una antigua cámara mágica que alberga a una criatura mortal que amenaza a los estudiantes de sangre impura. Harry y sus amigos Ron y Hermione investigan los misteriosos ataques que ocurren en la escuela mientras intentan descubrir la verdad detrás de la leyenda de la Cámara Secreta.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/harry.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Harry Potter<span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
+                <p>Ron vamos a volar en el carro de tu padre.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/ron.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Ron Weasley <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
+                <p>Ni lo pienses Harry, papá me matará.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/draco.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Draco Malfoy <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
+                <p>No molesten más magos sangre sucia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="img/fenix.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>Fenix</h4>
+          <p>Comañero de Harry en sus aventuras</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Post mas gracioosos</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="img/albus.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Albus Dumbledore</span>
+            <br>
+            <span>No te atrebas a tocar a Harry Voldemort</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/lord.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Lord Voldemort</span>
+            <br>
+            <span>Cuando te encuentre Harry me conoceras en verdad</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/snape.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Severus Snape</span>
+            <br>
+            <span>Algun día te mataré Harry</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/sombreri.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">Sombrero Seleccionador</span>
+            <br>
+            <span>Griffindor</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+     
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">#DarkArts</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#FantasticBeasts</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#Magic</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#Potions</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#Quidditch</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#J.K.Rowling</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#Witches</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#Dumbledore</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#Gryffindor</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#Wizards</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#Slytherin</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#Hufflepuff</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#Muggle</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">#Hogwarts</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>LAS 4 CASAS</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="img/logo-1.png" alt="Jeans" style="width:100%"></p>
+            <p><img src="img/logo-2.png" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="img/logo-3.png" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="img/logo-4.png" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-aqua">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-aqua w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container " style="padding:32px">
+  <a href="#" class="w3-button w3-circle w3-black w3-right w3-hover-aqua"><i class="fa fa-angle-up"></i></a>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
